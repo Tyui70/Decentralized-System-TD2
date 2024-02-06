@@ -1,8 +1,9 @@
 # Installation of torrent package
-
+```
 *npm install -g torrent*
 
 *torrent --version*
+```
 
 # Q1 - Create a torrent containing this image
 
