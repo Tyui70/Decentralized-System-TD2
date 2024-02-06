@@ -1,6 +1,7 @@
 # Installation of torrent package
 
 *npm install -g torrent*
+
 *torrent --version*
 
 # Q1 - Create a torrent containing this image
@@ -28,14 +29,23 @@ I basically followed the steps to download and install the app manually.
 I downloaded the zip file and extracted it.
 
 *cd Decentralized\kubo_v0.26.0_windows-amd64\kubo*
+
 *.\ipfs.exe --version*
+
 *$GO_IPFS_LOCATION = pwd*
+
 *if (!(Test-Path -Path $PROFILE)) { New-Item -ItemType File -Path $PROFILE -Force }*
+
 *notepad $PROFILE*
+
 *Add-Content $PROFILE "`n[System.Environment]::SetEnvironmentVariable('PATH',`$Env:PATH+';;$GO_IPFS_LOCATION')"*
+
 *Set-ExecutionPolicy RemoteSigned*
+
 *& $profile*
+
 *cd ~*
+
 *ipfs --version*
 
 # Q1 - Upload the previous image to IPFS
